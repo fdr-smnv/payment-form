@@ -25,6 +25,7 @@ const PaymentRecordSchema = new mongoose.Schema({
   Amount: {
     type: Number,
     required: true,
+    min: 1
   },
 });
 
