@@ -98,7 +98,7 @@ function App() {
               pattern: new RegExp('^[0-9]{3}$'),
               message: 'Wrong CVV format.',
             },
-            { required: true, message: 'Card number is required.' },
+            { required: true, message: 'CVV is required.' },
           ]}
         >
           <Cleave
@@ -125,7 +125,7 @@ function App() {
           <Button
             type="primary"
             htmlType={'submit'}
-            style={{ width: '100%' }}
+            block
             disabled={isSubmitDisabled}
           >
             Submit
